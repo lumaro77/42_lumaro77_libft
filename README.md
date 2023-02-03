@@ -81,7 +81,7 @@ Checks for any printable character including space| The character to test | 0 if
 
 # Functions "lst"
 
-## [ft_lstadd_back](ft_lstadd_back.c)
+## [ft_lstadd_back](ft_lstadd_back_bonus.c)
 
 `void        ft_lstadd_back(t_list **lst, t_list *new)`
 
@@ -89,7 +89,7 @@ Description | Param. 1st | Param. 2nd | Return Value
 :-----------: | :-----------: | :-----------:| :-----------:
 Adds the 'new' element to the end of a list| A pointer addres to the first element of a list | A pointer to the new element to be added to the list | None.
 
-## [ft_lstadd_front](ft_lstadd_front.c)
+## [ft_lstadd_front](ft_lstadd_front_bonus.c)
 
 `void        ft_lstadd_front(t_list **lst, t_list *new)`
 
@@ -97,7 +97,7 @@ Description | Param. 1st | Param. 2nd | Return Value
 :-----------: | :-----------: | :-----------:| :-----------:
 Adds the 'new' element to the beguining of a list| A pointer addres to the first element of a list | A pointer to the new element to be added to the list | None.
 
-## [ft_lstclear](ft_lstclear.c)
+## [ft_lstclear](ft_lstclear_bonus.c)
 
 `void         ft_lstclear(t_list **lst, void (*del)(void *))`
 
@@ -105,7 +105,7 @@ Description | Param. 1st | Param. 2nd | Return Value
 :-----------: | :-----------: | :-----------:| :-----------:
 Deletes and frees every element of a list, using 'del' function and free(). Pointer to the is is set to NULL | A pointer addres to the first element of a list | A pointer to the fuction used to delete the content of each list element| None.
 
-## [ft_lstdelone](ft_lstdelone.c)
+## [ft_lstdelone](ft_lstdelone_bonus.c)
 
 `void          ft_lstdelone(t_list *lst, void (*del)(void *))`
 
@@ -113,7 +113,7 @@ Description | Param. 1st | Param. 2nd | Return Value
 :-----------: | :-----------: | :-----------:| :-----------:
 Deletes and frees an element of a list, using 'del' function and free(). Memory of next should not be freed. | A pointer addres to the element to be deleted | A pointer to the fuction used to delete the content of list element| None.
 
-## [ft_lstlast](ft_lstlast.c)
+## [ft_lstlast](ft_lstlast_bonus_bonus.c)
 
 `t_list          *ft_lstlast(t_list *lst)`
 
@@ -121,7 +121,7 @@ Description | Param. 1st | Return Value
 :-----------: | :-----------: | :-----------:
 Returns the last element of a list | A pointer to the first element of a list | A pointer to last element of the list.
 
-## [ft_lstiter](ft_lstiter.c)
+## [ft_lstiter](ft_lstiter_bonus.c)
 
 `void          ft_lstiter(t_list *lst, void (*f)(void *))`
 
@@ -129,7 +129,7 @@ Description | Param. 1st | Param. 2nd | Return Value
 :-----------: | :-----------: | :-----------:| :-----------:
 Iterates the list 'lst' and applies the function 'f' to the content of each element| A pointer addres to the first element of the list | A pointer to the fuction used to process the content of every element| None.
 
-## [ft_lstmap](ft_lstmap.c)
+## [ft_lstmap](ft_lstmap_bonus.c)
 
 `t_list          *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))`
 
@@ -137,7 +137,7 @@ Description | Param. 1st | Param. 2nd | Return Value
 :-----------: | :-----------: | :-----------:| :-----------:
 Iterates the list 'lst' and applies the function 'f' to the content of each element generating a new list. The 'del' function wil be used if allocation fails| A pointer addres to an element of the list | A pointer to the fuction used to iterate the list | A pointer to the fuction used to delete the content of list element (if needed) | The new list. NULL if allocation fails.
 
-## [ft_lstnew](ft_lstnew.c)
+## [ft_lstnew](ft_lstnew_bonus.c)
 
 `t_list          *ft_lstnew(void *content)`
 
@@ -145,7 +145,7 @@ Description | Param. 1st | Return Value
 :-----------: | :-----------: | :-----------:
 Allocates the space and returns a new list element. Content is initialized with 'content' parameter. The 'next' variable is set to NULL | Content to be used on the new element | The new element
 
-## [ft_lstsize](ft_lstsize.c)
+## [ft_lstsize](ft_lstsize_bonus.c)
 
 `int          ft_lstsize(t_list *lst)`
 
